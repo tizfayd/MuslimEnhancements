@@ -1,0 +1,1 @@
+#	custom_faith_icons = {shia_unused shia_custom shia_custom_2 shia_custom_3 shia_custom_4}

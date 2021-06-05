@@ -1,0 +1,104 @@
+﻿596 = {
+	name = "dynn_Mujahidid"
+	culture = "maghrebi"
+}
+
+790 = {
+	name = "dynn_Ghaznavid"
+	culture = "afghan"
+}
+
+101728 = {
+	prefix = "dynnp_i-"
+	name = "dynn_Sabbah"
+	culture = "persian"
+}
+
+1043006 = {
+	name = "dynn_Shahi"
+	culture = "afghan"
+}
+
+qarm_sanbar = {
+	name = "dynn_Sanbar"
+	culture = "bedouin"
+}
+
+dan_aki = {
+	name = "dynn_Aki"
+	culture = "danish"
+}
+
+dan_vendsyssel = {
+	prefix = "dynnp_af"
+	name = "dynn_Vendsyssel"
+	culture = "danish"
+}
+bed_manjawa = {
+	name = "dynn_Manjawa"
+	culture = "bedouin"
+}
+geo_toreli = {
+	name = "dynn_Toreli"
+	culture = "georgian"
+}
+geo_abuserisdze = {
+	name = "dynn_Abuserisdze"
+	culture = "georgian"
+}
+byz_perenos = {
+	name = "dynn_Perenos"
+	culture = "greek"
+}
+serb_nestongos = {
+	name = "dynn_Nestongos"
+	culture = "serbian"
+}
+ghaz_siddiqi = {
+	name = "dynn_Siddiqi"
+	culture = "afghan"
+}
+punj_mangal = {
+	name = "dynn_Mangal"
+	culture = "punjabi"
+}
+punj_zadran = {
+	name = "dynn_Zadran"
+	culture = "punjabi"
+}
+punj_yusufzai = {
+	name = "dynn_Yusufzai"
+	culture = "punjabi"
+}
+punj_katoch = {
+	name = "dynn_Katoch"
+	culture = "punjabi"
+}
+punj_awan = {
+	name = "dynn_Awan"
+	culture = "punjabi"
+}
+punj_khokhar = {
+	name = "dynn_Khokhar"
+	culture = "punjabi"
+}
+ghaz_khujandi = {
+	name = "dynn_Khujandi"
+	culture = "punjabi"
+}
+ghaz_husairi = {
+	name = "dynn_Husairi"
+	culture = "afghan"
+}
+ghaz_mishkanid = {
+	name = "dynn_Mishkanid"
+	culture = "afghan"
+}
+hind_khatri = {
+	name = "dynn_Khatri"
+	culture = "hindustani"
+}
+afg_kho = {
+	name = "dynn_Kho"
+	culture = "afghan"
+}

@@ -1,0 +1,73 @@
+﻿namespace = muslim_enhancements
+#Islamic Hungarian Resettlement decision
+muslim_enhancements.0001 = { # by Flavio Verna
+	type = character_event
+	title = muslim_enhancements.0001.t
+	desc = muslim_enhancements.0001.desc
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_rational
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		promote_islamic_hungarian_settlement_decision_scripted_effect = yes
+	}
+	
+	option = {
+		name = muslim_enhancements.0001.a
+		every_player = {
+			limit = {
+				NOT = { this = root }
+				capital_province = {
+					geographical_region = world_europe_east
+				}
+			}
+			trigger_event = muslim_enhancements.0002
+		}
+	}
+}
+
+muslim_enhancements.0002 = { # by Flavio Verna
+	type = character_event
+	title = muslim_enhancements.0002.t
+	desc = {
+		first_valid = {
+			# Hungarian Vassal reaction.
+			triggered_desc = {
+				trigger = {
+					culture = culture:hungarian
+					target_is_liege_or_above = scope:scoped_ruler
+				}
+				desc = muslim_enhancements.0002.desc.vassals
+			}
+			desc = muslim_enhancements.0002.desc.others
+		}
+	}
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_rational
+	}
+	
+	option = {
+		name = {
+			trigger = {
+				culture = culture:hungarian
+				target_is_liege_or_above = scope:scoped_ruler
+			}	
+			text = muslim_enhancements.0002.a
+		}
+		name = {
+			trigger = {
+				NAND = {
+					culture = culture:hungarian
+					target_is_liege_or_above = scope:scoped_ruler
+				}
+			}
+			text = muslim_enhancements.0002.b
+		}
+	}
+}

@@ -1,0 +1,10 @@
+﻿l_english:
+ promote_islamic_hungarian_settlement_decision:0 "Promote Muslim Settlements"
+ promote_islamic_hungarian_settlement_decision_desc:1 "By opening the [ROOT.Char.GetPrimaryTitle.GetName] to traders and settlers from across the Muslim world, I will be able to speed the development of my country and bring our people closer to the Sunnah of the Prophet."
+ promote_islamic_hungarian_settlement_decision_tooltip:0 "Welcome new Muslim Settlers in [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip]"
+ promote_hungarian_settlement_decision_muslim:0 "Your [faith|E] is an Islamic [faith]."
+ promote_islamic_hungarian_settlement_decision_confirm:0 "Send out the announcement!"
+ promote_islamic_hungarian_settlement_decision_every_vassal_custom:0 "Every Mogyer Vassal and Courtier"
+ promote_islamic_hungarian_settlement_decision_every_province_custom:1 "Every Mogyer County in the Kingdom of Hungary"
+ promote_islamic_hungarian_settlement_decision_increased_development:0 "Gains #V 1#! [development|E] if currently under 5 [development]"
+ promote_islamic_hungarian_settlement_decision_convert_county:0 "May convert to an Islamic [faith|E]"

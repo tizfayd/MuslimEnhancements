@@ -1,0 +1,39 @@
+﻿# Muslim version of the Blood of the Prophet-trait. Muslim agnatically descended from Muhammed. Female version is localized 'Sayyida'
+sayyid = {
+	index = 170
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_sayyid
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = trait_sayyida
+			}
+			desc = trait_sayyid
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_sayyid_desc
+			}
+			desc = trait_sayyid_character_desc
+		}
+	}
+
+	same_faith_opinion = 10
+	clergy_opinion = 15
+	diplomacy = 2
+	monthly_piety = 1
+	
+	inherit_chance = 100
+	parent_inheritance_sex = male
+	inherit_from_real_father = no
+	ai_honor = dominant_positive_ai_value
+	ai_zeal = low_positive_ai_value
+}

@@ -1,0 +1,176 @@
+﻿### HARD CODED - DO NOT REMOVE ###
+
+attacker_offensive = {
+	enemy_unit_priority = 400
+	
+	objectives = {
+		wargoal_province = 225
+
+		enemy_unit_province = {
+			priority = 300
+			area = wargoal
+			area = primary_attacker
+		}
+	}
+	
+	objectives = {
+		enemy_unit_province = {
+			priority = 250
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 175
+		enemy_province = 125
+	}
+
+	objectives = {
+		enemy_ally_province = 125
+	}
+	
+	objectives = {
+		capital_province = 50
+	}
+	
+	objectives = {
+		province = 25
+	}
+
+	objectives = {
+		defend_wargoal_province = 75
+	}
+}
+
+attacker_defensive = {
+	enemy_unit_priority = 50
+	
+	objectives = {
+		enemy_unit_province = {
+			priority = 50
+		}		
+
+		wargoal_province = 200
+	}
+	
+	objectives = {
+		enemy_capital_province = 150
+		enemy_province = 100
+	}
+
+	objectives = {
+		enemy_ally_province = 75
+	}
+	
+	objectives = {
+		capital_province = 100
+	}
+	
+	objectives = {
+		province = 75
+	}
+
+	objectives = {
+		defend_wargoal_province = 175
+	}
+}
+
+defender_offensive = {
+	enemy_unit_priority = 50
+	
+	objectives = {
+		wargoal_province = 225
+		
+		enemy_unit_province = {
+			priority = 300
+			area = wargoal
+			area = primary_defender
+		}
+	}
+
+	objectives = {
+		enemy_unit_province = {
+			priority = 175
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 200
+		enemy_province = 125
+	}
+
+	objectives = {
+		enemy_ally_province = 100
+	}
+	
+	objectives = {
+		capital_province = 50
+		province = 25
+	}
+
+	objectives = {
+		defend_wargoal_province = 75
+	}
+}
+
+defender_defensive = {
+	enemy_unit_priority = 50
+	
+	objectives = {
+		wargoal_province = 300
+		
+		enemy_unit_province = {
+			priority = 125
+			area = wargoal
+			area = primary_defender
+		}
+	}
+
+	objectives = {
+		enemy_unit_province = {
+			priority = 50
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 75
+		enemy_province = 50
+	}
+
+	objectives = {
+		enemy_ally_province = 25
+	}
+	
+	objectives = {
+		capital_province = 225
+		province = 175
+	}	
+
+	objectives = {
+		defend_wargoal_province = 275
+	}
+}
+
+defender_desperate = {
+	enemy_unit_priority = 50
+	
+	objectives = {
+		wargoal_province = 225
+		
+		enemy_unit_province = {
+			priority = 150
+			area = wargoal
+			area = primary_defender
+		}
+	}
+	
+	objectives = {
+		capital_province = 325
+		province = 100
+	}	
+
+	objectives = {
+		defend_wargoal_province = 275
+	}
+}
+
+### HARD CODED - DO NOT REMOVE ###

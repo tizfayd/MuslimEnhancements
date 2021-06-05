@@ -1,0 +1,14 @@
+Andalusian, Armenian, Banijurids, Bedouin, 
+Beja, Berber, Bolghar, Bulgarian, Croatian, Danish, 
+Egyptian, Ethiopian, Georgian, Greek, Hindustani, Khwarezmian, Kurdish, 
+Levantine, Persian, Punjabi, Serbian, Sogdian, Somali,
+Tajik, Turkish, 
+
+
+
+
+TO DO: 
+Oghuz,
+Sindhi,
+
+ 

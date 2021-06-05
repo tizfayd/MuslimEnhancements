@@ -1,0 +1,6 @@
+# 6256 - NUFUD-AD-DAHI
+6256 = {	# 6256 - NUFUD-AD-DAHI
+	culture = bedouin
+	religion = ashari
+	holding = city_holding
+	}

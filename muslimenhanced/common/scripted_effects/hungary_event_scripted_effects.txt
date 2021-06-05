@@ -1,0 +1,113 @@
+﻿promote_islamic_hungarian_settlement_decision_scripted_effect = {
+	if = {
+		limit = {
+			culture = culture:mogyer
+		}
+
+		# Convert my culture to Hungarian Culture
+		set_culture = culture:hungarian
+		culture:hungarian = {
+			get_all_innovations_from = culture:mogyer
+		}
+
+		# Convert my courtiers to Hungarian 
+		hidden_effect = {
+			every_courtier = {
+				limit = {
+					culture = culture:mogyer
+				}
+				set_culture = culture:hungarian
+			}
+		}
+
+		# Convert my vassals to Hungarian
+		every_vassal_or_below = {
+			limit = {
+				culture = culture:mogyer
+			}
+
+			custom = promote_hungarian_settlement_decision_every_vassal_custom
+			set_culture = culture:hungarian
+
+			# Convert their courtiers as well
+			hidden_effect = {
+				every_courtier = {
+					limit = {
+						culture = culture:mogyer
+					}
+					set_culture = culture:hungarian
+				}
+			}
+		}
+	}
+
+	title:k_hungary = {
+		every_in_de_jure_hierarchy = {
+			custom = promote_hungarian_settlement_decision_every_province_custom
+			limit = {
+				tier = tier_county
+				culture = culture:mogyer
+				title_province = { geographical_region = custom_hungary }
+				holder = {
+					OR = {
+						this = root
+						target_is_liege_or_above = root
+					}
+				}
+			}
+			set_county_culture = culture:hungarian
+			add_county_modifier = {
+				modifier = hungarian_resettlement_modifier_islamic
+				years = 100
+			}
+			custom_tooltip = promote_hungarian_settlement_decision_increased_development
+			custom_tooltip = promote_hungarian_settlement_decision_convert_county
+			hidden_effect = {
+				if = {
+					limit = {
+						development_level < 5
+					}
+					change_development_level = 1
+				}
+				random_list = {
+					30 = {
+						# Nothing happens
+					}
+					30 = {
+						trigger = {
+							NOT = {
+								faith = { 
+							religion = religion:islam_religion
+								}
+							}
+						}
+						set_county_faith = root.faith
+					}
+					30 = {
+						trigger = {
+							NOT = {
+								faith = { 
+							religion = religion:islam_religion
+								}
+							}
+							any_neighboring_county = {
+								faith = { 
+							religion = religion:islam_religion
+								}
+							}
+						}
+						random_neighboring_county = {
+							limit = {
+								faith = { 
+							religion = religion:islam_religion
+								}
+							}
+							save_scope_as = neighboring_county
+						}
+						set_county_faith = scope:neighboring_county.faith
+					}
+				}
+			}
+		}
+	}
+}

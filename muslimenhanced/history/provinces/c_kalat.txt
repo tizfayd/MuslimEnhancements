@@ -1,0 +1,31 @@
+# 4517 - Kalat (Replace Sindhi with Brahui later.)
+4517 = { # 4517 - Kalat
+	culture = sindhi
+	religion = imami
+	
+	# History
+	867.1.1 = {
+	holding = city_holding
+	religion = imami
+	}
+	
+	1066.1.1 = {
+	holding = city_holding
+	religion = ashari
+	}
+
+# 4499 - Rukhaj
+4499 = { # 4499 - Rukhaj
+	culture = afghan
+	religion = imami
+	
+	# History
+	867.1.1 = {
+	holding = city_holding
+	religion = imami
+	}
+	
+	1066.1.1 = {
+	holding = city_holding
+	religion = ashari
+	}

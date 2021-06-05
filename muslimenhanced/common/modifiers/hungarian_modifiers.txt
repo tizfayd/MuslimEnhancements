@@ -1,0 +1,6 @@
+﻿hungarian_resettlement_modifier_islamic = {
+	icon = horse_positive
+	county_opinion_add = -10
+	build_speed = -0.1
+	development_growth_factor = small_development_growth_gain
+}

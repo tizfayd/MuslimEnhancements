@@ -1,0 +1,242 @@
+banij001real = {
+	name = "Banijur" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	765.1.1 = { #fictional
+		birth = yes
+	}
+	786.1.1 = { #fictional
+		add_spouse = banij002fake
+	}
+	833.1.1 = { #fictional
+		death = yes
+	}
+}
+
+banij002fake = {
+	name = "Gerdengaz" #fictional, wife of Banijur
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	768.1.1 = { #fictional
+		birth = yes
+	}
+	786.1.1 = { #fictional
+		add_spouse = banij001real
+	}
+	840.1.1 = { #fictional
+		death = yes
+	}
+}
+
+banij003real = {
+	name = "Hashim" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij001real
+	mother = banij002fake
+	781.1.1 = { #fictional
+		birth = yes
+	}
+	806.1.1 = { #fictional
+		add_spouse = banij004fake
+	}
+	857.1.1 = { #real
+		death = yes
+	}
+}
+
+banij004fake = {
+	name = "PexS_an" # fictional, wife of Hashim
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	782.1.1 = { #fictional
+		birth = yes
+	}
+	806.1.1 = { #fictional
+		add_spouse = banij003real
+	}
+	860.1.1 = { #fictional
+		death = yes
+	}
+}
+
+banij005real = {
+	name = "al-Abbas" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij003real
+	mother = banij004fake
+	808.1.1 = { #fictional
+		birth = yes
+	}
+	826.1.1 = { #fictional
+		add_spouse = banij006fake
+	}
+	864.1.1 = { #fictional 
+		death = yes
+	}
+}
+banij006fake = {
+	name = "Zerya" # fake, wife of al-Abbas
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	807.1.1 = { #fictional
+		birth = yes
+	}
+	826.1.1 = { # fictional
+		add_spouse = banij005real
+	}
+	875.1.1 = { # fictional 
+		death = yes
+	}
+}
+
+banij007real = {
+	name = "Dawud" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij005real
+	mother = banij006fake
+	829.1.1 = { # fictional
+		birth = yes
+	}
+	848.1.1 = { # fictional
+		add_spouse = banij008fake
+	}
+	873.1.1 = { # real
+		death = yes
+	}
+}
+
+banij008fake = {
+	name = "KezI_zer" # fake, wife of Dawud
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	833.1.1 = { #fictional
+		birth = yes
+	}
+	848.1.1 = { # fictional
+		add_spouse = banij007real
+	}
+	910.1.1 = { # fictional 
+		death = yes
+	}
+}
+
+banij009real = {
+	name = "Ahmad" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij001real
+	mother = banij002fake
+	791.1.1 = { # fictional
+		birth = yes
+	}
+	810.1.1 = { # fictional
+		add_spouse = banij010fake
+	}
+	859.1.1 = { # fictional
+		death = yes
+	}
+}
+
+banij010fake = {
+	name = "BalnexS_I_n" # fake, wife of Ahmad
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	793.1.1 = { #fictional
+		birth = yes
+	}
+	810.1.1 = { # fictional
+		add_spouse = banij009real
+	}
+	871.1.1 = { # fictional 
+		death = yes
+	}
+}
+
+banij011real = {
+	name = "Muhammad" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij009real
+	mother = banij010fake
+	817.1.1 = { # fictional
+		birth = yes
+	}
+	836.1.1 = { # fictional
+		add_spouse = banij012fake
+	}
+	898.1.1 = { # real
+		death = yes
+	}
+}
+
+banij012fake = {
+	name = "RewS_a" # fake, wife of Muhammad
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	820.1.1 = { #fictional
+		birth = yes
+	}
+	836.1.1 = { # fictional
+		add_spouse = banij011real
+	}
+	890.1.1 = { # fictional 
+		death = yes
+	}
+}
+
+banij013real = {
+	name = "Ahmad" # real
+	dynasty = 1059103
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	father = banij011real
+	mother = banij012fake
+	840.1.1 = { # fictional
+		birth = yes
+	}
+	861.1.1 = { # fictional
+		add_spouse = banij013fake
+	}
+	908.1.1 = { # real
+		death = yes
+	}
+}
+
+
+banij013fake = {
+	name = "Arezu" # fake, wife of Muhammad
+	female = yes
+	#lowborn
+	religion = maturidi #speculative, matches samanids
+	culture = "afghan" # described as "local rulers"
+	820.1.1 = { #fictional
+		birth = yes
+	}
+	836.1.1 = { # fictional
+		add_spouse = banij011real
+	}
+	890.1.1 = { # fictional 
+		death = yes
+	}
+}

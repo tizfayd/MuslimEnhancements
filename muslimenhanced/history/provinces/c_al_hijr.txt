@@ -1,0 +1,7 @@
+6201 = {	#AL-HIJR aka Mada'in Saleh aka Hegra
+	holding = tribal_holding
+	867.1.1 = {
+		holding = tribal_holding
+		special_building_slot = hejra_01
+		special_building = hejra_01
+	}

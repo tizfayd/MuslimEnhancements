@@ -1,0 +1,17 @@
+arrajan = {
+	county = c_arrajan
+
+	character_modifier = {
+		name = holy_site_arrajan_effect_name
+		councillor_opinion = 7
+	}
+}
+
+isfahan = {
+	county = c_isfahan
+
+	character_modifier = {
+		name = holy_site_isfahan_effect_name
+		county_opinion_add = 12
+	}
+}

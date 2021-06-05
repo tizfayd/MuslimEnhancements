@@ -1,0 +1,385 @@
+bm_1066_caliphates_in_turmoil = {
+	start_date = 1066.9.15
+	is_playable = yes
+		
+	# Caliph Al-Qaim ID: 3084
+	character = {
+		name = "bookmark_caliph" # Caliph Al-Qaim
+		dynasty = 101727
+		dynasty_splendor_level = 7
+		type = male
+		history_id = 3084
+		birth = 1017.1.1
+		title = d_sunni
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1100 200 }
+		
+		animation = worry
+
+		#Muhammad Dhakirat (ID: 34026)
+		character = {
+			name = "bookmark_caliph_alt_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 101727
+			type = male
+			birth = 1035.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 34026
+            animation = idle
+		}
+
+		#Al-Muqtadi (ID: 3086)
+		character = {
+			name = "bookmark_caliph_alt_grandson"
+			relation = "BOOKMARK_RELATION_GRANDSON"
+			dynasty = 101727
+			type = male
+			birth = 1052.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 3086
+            animation = content
+		}
+	}
+	
+    # Al-Mustansir ID: 3096
+	character = {
+		name = "bookmark_mustansir" # Al-Mustansir
+		dynasty = 589
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 3096
+		birth = 1029.7.5
+		title = k_egypt
+		government = clan_government
+		culture = egyptian
+		religion = ismaili
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 1100 700 }
+		
+		animation = personality_coward
+
+        # elder son, al-Nizar ID:41706
+
+		character = {
+			name = "bookmark_nizar"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 589
+			type = male
+			birth = 1045.1.1
+			culture = egyptian
+			religion = ismaili
+			history_id = 41706
+			animation = war_defender
+		}
+
+        #younger son, al-Mustali ID:3100
+
+		character = {
+			name = "bookmark_mustali"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 589
+			type = male
+			birth = 1050.1.1
+			culture = egyptian
+			religion = ismaili
+			history_id = 3100
+			animation = personality_zealous
+		}
+	}
+
+	# Mustali ID: 3100
+	character = {
+		name = "bookmark_mustali"
+		dynasty = 589
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 3100
+		birth = 1050.1.1
+		title = c_al-buhaira
+		government = clan_government
+		culture = egyptian
+		religion = ismaili
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 800 450 }
+		
+		animation = personality_zealous
+
+		# His Father ID: 3096
+		character = {
+			name = "bookmark_mustansir"
+			relation = "BOOKMARK_RELATION_FATHER"
+			dynasty = 589
+			type = male
+			birth = 1029.7.5
+			religion = ismaili
+			culture = egyptian
+			history_id = 3096
+			animation = personality_coward
+		}
+
+        #Nizar ID:41706
+		character = {
+			name = "bookmark_nizar"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 589
+			type = male
+			birth = 1045.1.1
+			culture = egyptian
+			religion = ismaili
+			history_id = 41706
+			animation = war_defender
+		}
+	}
+
+	# Abbadid ID: 3212
+	character = {
+		name = "bookmark_abbadid"
+		dynasty = 594
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 3212
+		birth = 1016.1.1
+		title = d_sevilla
+		government = clan_government
+		culture = andalusian
+		religion = muwalladi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 350 250 }
+		
+		animation = personality_callous
+
+		#	His Son ID: 3214
+		character = {
+			name = "bookmark_abbadid_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 594
+			type = male
+			birth = 1040.1.1
+			religion = muwalladi
+			culture = andalusian
+			history_id = 3214
+			animation = idle
+		}
+	}
+	
+	# Almoravid ID: 32965
+	character = {
+		name = "bookmark_almoravid"
+		dynasty = 7274
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 32965
+		birth = 1040.1.1
+		title = d_marrakesh
+		government = clan_government
+		culture = butr
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 120 600 }
+		
+		animation = personality_rational
+
+		#Abu Bakr ID: 3853
+		character = {
+			name = "bookmark_almoravid_abu_bakr"
+			relation = "BOOKMARK_RELATION_COUSIN"
+			dynasty = 7274
+			type = male
+			birth = 1036.1.1
+			religion = ashari
+			culture = butr
+			history_id = 3853
+		}
+	}	
+}
+
+bm_1066_swords_of_islam = {
+	start_date = 1066.9.15
+	is_playable = yes
+
+    # Alp Arslan ID: 3040
+	character = {
+		name = "bookmark_alp_arslan" # Alp Arslan
+		dynasty = 613
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 3040
+		birth = 1029.1.1
+		title = e_persia
+		government = clan_government
+		culture = turkish
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 350 450 }
+		
+		animation = personality_forgiving
+
+        # Relative, Suleiman ibn Qutulmish (ID: 3046)
+
+		character = {
+			name = "bookmark_alp_arslan_alt_suleyman"
+			relation = "BOOKMARK_RELATION_COUSIN"
+			dynasty = 613
+			type = male
+			birth = 1039.9.6
+			culture = oghuz
+			religion = ashari
+			history_id = 3046
+			animation = personality_dishonorable
+		}
+
+        #Malik Shah, son (ID: 3042)
+		character = {
+			name = "bookmark_alp_arslan_alt_malikshah"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 613
+			type = male
+			birth = 1055.8.8
+			culture = oghuz
+			religion = ashari
+			history_id = 3042
+			animation = personality_coward
+		}
+	}
+	
+	# Karakhanid ID: 3014
+	character = {
+		name = "bookmark_karakhanid" # Ibrahim Boritigin
+		dynasty = 101864
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 3014
+		birth = 1017.1.2
+		title = k_transoxiana
+		government = clan_government
+		culture = karluk
+		religion = maturidi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 800 150 }
+		
+		animation = personality_bold
+
+		#Shams al-Mulk Nasr (ID: 3016)
+		character = {
+			name = "bookmark_karakhanid_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 101864
+			type = male
+			birth = 1035.1.2
+			culture = karluk
+			religion = maturidi
+			history_id = 3016
+            animation = idle
+		}
+	}
+	
+	# Qawurd ID: 3041
+	character = {
+		name = "bookmark_qawurd" # Qawurd
+		dynasty = 613
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 3041
+		birth = 1035.1.2
+		title = d_kirman
+		government = clan_government
+		culture = turkish
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 500 800 }
+		
+		animation = disapproval
+
+		#	His Son ID: 144027
+		character = {
+			name = "bookmark_qawurd_alt_elder_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 613
+			type = male
+			birth = 1037.1.1
+			religion = ashari
+			culture = oghuz
+			history_id = 144027
+			animation = bold
+		}
+
+		#	His other son ID: 144025
+		character = {
+			name = "bookmark_qawurd_alt_middle_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 613
+			type = male
+			birth = 1041.1.1
+			religion = ashari
+			culture = oghuz
+			history_id = 144025
+			animation = bold
+		}
+	}
+	
+	# Ghurid ID: 93137
+	character = {
+		name = "bookmark_ghurid"
+		dynasty = 791
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 93137
+		birth = 1020.1.1
+		title = c_ghur
+		government = clan_government
+		culture = tajik
+		religion = maturidi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 950 650 }
+		
+		animation = personality_content
+
+		# His Son ID: 93138
+		character = {
+			name = "bookmark_ghurid_alt_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 791
+			type = male
+			birth = 1050.1.1
+			religion = maturidi
+			culture = tajik
+			history_id = 93138
+			animation = personality_content
+		}
+	}
+
+	# Ghaznavid ID: 144133
+	character = {
+		name = "bookmark_ghaznavid"
+		dynasty = 790
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 144133
+		birth = 1022.1.1
+		title = k_kabulistan
+		government = clan_government
+		culture = turkish
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1200 300 }
+		
+		animation = personality_rational
+
+		#	His Son ID: 144134
+		character = {
+			name = "bookmark_ghaznavid_alt_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 790
+			type = male
+			birth = 1052.1.1
+			religion = ashari
+			culture = oghuz
+			history_id = 144134
+		}
+	}	
+}

@@ -1,0 +1,4 @@
+﻿house_sistan_nasrids = {
+	name = "dynn_Nasrid"
+	dynasty = 812 #saffarids
+}

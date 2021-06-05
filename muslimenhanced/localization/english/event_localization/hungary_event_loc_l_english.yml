@@ -1,0 +1,9 @@
+﻿ l_english:
+ muslim_enhancements.0001.t:0 "New Beginning"
+ muslim_enhancements.0001.desc:0 "When our people crossed over the Carpathians into the Hungarian plains, we brought along with us the Böszörmény, Turkic tribesmen professing the faith of the Arab prophet who had joined our confederation. By promoting members of these tribes into positions of prominence and inviting settlers, merchants and soldiers from across the Muslim world, [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] will soon become a bastion of Islam in a sea of Christians and pagans; perhaps one day, [scoped_ruler.GetCapital.GetNameNoTierNoTooltip] on the Danube will rival Baghdad on the Tigris.\n\nAs we import scholars and jurists to establish our own ulema, hopefully the imposition of Islamic law and custom will calm the rowdier subjects of [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] as it is brought into the [scoped_ruler.GetFaith.GetAdjective] fold."
+ muslim_enhancements.0001.a:0 "God is good!"
+ muslim_enhancements.0002.t:0 "The New Settlers"
+ muslim_enhancements.0002.desc.vassals:0 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from across the Muslim world.\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate our land faster and increase commerce with our allies."
+ muslim_enhancements.0002.desc.others:1 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from across the Muslim world into [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
+ muslim_enhancements.0002.a:0 "They better not come for my wine!"
+ muslim_enhancements.0002.b:0 "I see..."

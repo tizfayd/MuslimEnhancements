@@ -1,0 +1,17 @@
+# 4026 - DAMGHAN
+4026 = {	# 4026 - DAMGHAN
+	culture = tajik
+	religion = ashari
+	
+	# History
+	867.1.1 = {
+	holding = city_holding
+	special_building_slot = tarikhaneh_mosque_01
+	special_building = tarikhaneh_mosque_01
+	}
+	
+	1066.1.1 = {
+	holding = city_holding
+	special_building_slot = tarikhaneh_mosque_02
+	special_building = tarikhaneh_mosque_02
+	}
