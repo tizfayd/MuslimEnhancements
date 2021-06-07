@@ -736,27 +736,48 @@
 				}
 
 				title:d_bucellaria = {
-                	every_in_de_jure_hierarchy = {
-                		change_title_holder = {
-                            holder = character:34220
-                            change = scope:steal
-                            take_baronies = no
-                        }
-						if = {
-							limit = {
-								tier = tier_county
-							}
-							add_county_modifier = {
-								modifier = defending_against_turks_control
-								years = 1
-							}
-							add_county_modifier = {
-								modifier = defending_against_turks_opinion
-								years = 5
-							}
-						}
+					change_title_holder = {
+                        holder = character:34220
+                        change = scope:steal
+                        take_baronies = no
+                    }
+			    }
+
+				title:c_galatia = {
+					change_title_holder = {
+                        holder = character:34220
+                        change = scope:steal
+                        take_baronies = no
+                    }
+
+					add_county_modifier = {
+						modifier = defending_against_turks_control
+						years = 1
 					}
-				}
+					
+					add_county_modifier = {
+						modifier = defending_against_turks_opinion
+						years = 5
+					}
+			    }
+
+				title:c_hadrianopolis = {
+					change_title_holder = {
+                        holder = character:34220
+                        change = scope:steal
+                        take_baronies = no
+                    }
+
+					add_county_modifier = {
+						modifier = defending_against_turks_control
+						years = 1
+					}
+					
+					add_county_modifier = {
+						modifier = defending_against_turks_opinion
+						years = 5
+					}
+			    }
 
 				title:d_paphlagonia = {
                 	every_in_de_jure_hierarchy = {
@@ -853,7 +874,7 @@
 				}
 			}
 
-			#Alexios gets Optimatoi and allies with the broken states
+			#Alexios gets Optimatoi and honorias and allies with the broken states
 			if = {
 				limit = {
 					character:1742 = {
@@ -884,7 +905,26 @@
 					}
 				}
 
+				title:c_honorias = {
+					change_title_holder = {
+                        holder = character:1742
+                        change = scope:change
+                        take_baronies = no
+                    }
+
+					add_county_modifier = {
+						modifier = defending_against_turks_control
+						years = 1
+					}
+
+					add_county_modifier = {
+						modifier = defending_against_turks_opinion
+						years = 10
+					}
+			    }
+
 				character:1742 = {
+
 					create_alliance = {
 						target = title:d_antioch.holder
 					}
