@@ -6,7 +6,6 @@
 	mutually_exclusive_titles = { always = no }
 
 	allowed_for_character = {
-		has_government = clan_government
 		NOR = {
 			has_character_flag = used_lifetime_invasion
 			faith = { has_doctrine_parameter = invasion_cb_enabled }
@@ -14,7 +13,7 @@
 	}
 
 	allowed_for_character_display_regardless = {
-		prestige_level >= 4
+		prestige_level >= 2
 	}
 	
 	allowed_against_character = {
@@ -63,163 +62,8 @@
 	}
 
 	cost = {
-		piety = {
-			value = 0
-			if = { # Attacking your HoF is impious
-				limit = {
-					exists = scope:attacker.faith.religious_head
-					scope:attacker.faith.religious_head = scope:defender
-				}
-				if = {
-					limit = {
-						scope:attacker.faith = {
-							has_doctrine = doctrine_spiritual_head
-						}
-					}
-					add = {
-						value = massive_piety_value
-						desc = CB_ATTACKER_HOF
-					}
-				}
-				else = {
-					add = {
-						value = medium_piety_value
-						desc = CB_ATTACKER_HOF
-					}
-				}
-			}
-			if = {
-				limit = {
-					scope:attacker.faith = scope:defender.faith
-					scope:defender = {
-						has_government = theocracy_government
-					}
-				}
-				add = {
-					value = medium_piety_value
-					desc = CB_ATTACKER_THEOCRACY
-				}
-			}
-		}
-		prestige = {
-			add = {
-				value = 2000
-				desc = CB_BASE_COST
-			}
-
-			#Innovation Prestige Discounts
-			if = {
-				limit = {
-					scope:attacker = {
-						culture = {
-							has_innovation = innovation_chronicle_writing
-							has_innovation = innovation_land_grants
-							has_innovation = innovation_rightful_ownership
-						}
-					}
-				}
-				multiply = {
-					value = 0.7
-					desc = CB_ATTACKER_INNOVATIONS
-				}
-			}
-			else_if = {
-				limit = {
-					scope:attacker = {
-						culture = {
-							OR = {
-								has_innovation = innovation_chronicle_writing
-								has_innovation = innovation_land_grants
-							}
-							OR = {
-								has_innovation = innovation_land_grants
-								has_innovation = innovation_rightful_ownership
-							}
-							OR = {
-								has_innovation = innovation_chronicle_writing
-								has_innovation = innovation_rightful_ownership
-							}
-						}
-					}
-				}
-				multiply = {
-					value = 0.8
-					desc = CB_ATTACKER_INNOVATIONS
-				}
-			}
-			else_if = {
-				limit = {
-					scope:attacker = {
-						culture = {
-							OR = {
-								has_innovation = innovation_chronicle_writing
-								has_innovation = innovation_land_grants
-								has_innovation = innovation_rightful_ownership
-							}
-						}
-					}
-				}
-				multiply = {
-					value = 0.9
-					desc = CB_ATTACKER_INNOVATIONS
-				}
-			}
-
-			# Bellum Justum Perk
-			if = {
-				limit = {
-					scope:attacker = {
-						has_perk = bellum_justum_perk
-					}
-				}
-				multiply = {
-					add = bellum_justum_discount_percentage
-					divide = 100
-					desc = CB_ATTACKER_BELLUM_JUSTUM
-				}
-			}
-
-			# Dynasty Warfare Perk
-			if = {
-				limit = {
-					scope:attacker = {
-						has_dynasty = yes
-						dynasty = {
-							has_dynasty_perk = warfare_legacy_2
-						}
-					}
-				}
-				multiply = {
-					value = warfare_legacy_2_discount
-					desc = CB_ATTACKER_DYNASTY_WARFARE
-				}
-			}
-
-			# Vassal contract in-realm cost reduction
-			if = {
-				limit = {
-					scope:attacker = {
-						is_independent_ruler = no
-						vassal_contract_has_flag = vassal_contract_war_override
-						liege = scope:defender.liege
-					}
-				}
-				multiply = {
-					value = war_declaration_rights_allowed_cost_reduction
-					desc = "CB_ATTACKER_VASSAL_CONTRACT"
-				}
-			}
-			
-			if = {
-				limit = {
-					has_game_rule = no_cost_casus_belli_costs
-				}
-				multiply = {
-					value = 0
-					desc = CB_GAME_RULE_NO_COST
-				}
-			}
-		}
+		piety = 25
+		prestige = 50
 	}
 	
 	on_declaration = {
@@ -1262,8 +1106,6 @@
 	use_de_jure_wargoal_only = yes
 	
 	attacker_wargoal_percentage = 0.2
-	attacker_score_from_battles_scale = 80 # default is 40
 	
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }

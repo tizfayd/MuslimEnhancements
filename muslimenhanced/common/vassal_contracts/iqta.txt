@@ -22,7 +22,7 @@ special_contract_iqta = {
 							scope:vassal.religion = scope:liege.religion
 						}
 					}
-					value = -0.75
+					value = -0.5
 				}
 			}
 			ai_vassal_desire = 0	
@@ -75,7 +75,7 @@ special_contract_iqta = {
 				levy_size = 0.35
 				army_maintenance_mult = -0.35
 				garrison_size = 0.35
-				levy_reinforcement_rate = 0.35
+				levy_reinforcement_rate_same_faith = 0.35
 				controlled_province_advantage = 5
 			}
 			
@@ -151,7 +151,7 @@ special_contract_iqta = {
 						primary_title.tier <= tier_duchy
 					}
 					scope:liege.culture = {
-						has_innovation = innovation_guilds
+						has_innovation = innovation_currency_02
 					}
 				}
 			}
@@ -176,7 +176,7 @@ special_contract_iqta = {
 								primary_title.tier <= tier_duchy
 							}
 							scope:liege.culture = {
-								has_innovation = innovation_guilds
+								has_innovation = innovation_currency_02
 							}
 						}
 					}

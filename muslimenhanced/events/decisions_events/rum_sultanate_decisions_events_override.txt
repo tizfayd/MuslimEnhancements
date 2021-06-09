@@ -86,6 +86,9 @@ middle_east_decisions.0014 = {
 	option = {
 		name = middle_east_decisions.0014.a
 		create_rum_scripted_effect = yes
+		hidden_effect = {
+			title:k_rum.holder = { levy_size = 2.5 }
+		}
 		# Send narrative fluff to other players (if any).
 		every_player = {
 			limit = {

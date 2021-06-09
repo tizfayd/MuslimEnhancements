@@ -1,5 +1,11 @@
 ﻿l_english:
 
+ siyasa_government:0 "Iqta"
+ siyasa_government_adjective:0 "Iqta"
+ siyasa_government_realm:0 "Iqta"
+ siyasa_government_desc:0 "$game_concept_iqta_desc$\n\n#F Iqta was an Islamic practice of tax farming that became common in and around Muslim Asia during the 10th century. Iqta is a form of administrative grant handed by the ruler to to a Muqti. A Muqti governs the land allotted to him in the name of the ruler, and gets to collect [taxes|E] and train [soldiers|E] for his superiors while keeping some for himself. The Muqtis didn't own the land and didn't have any right over the personal lives of the inhabitants, and held considerably less power than their European counterparts.#!"
+ siyasa_government_vassals_label:1 "Iqta [obligations|E] are based on each [vassal|E]'s [feudal_contract|E]"
+
  special_contract_iqta:2 "[Concept( 'feudal_contract', 'Special Contract' )|B|color_black|U]"
  special_contract_jizya:0 "Normal"
  special_contract_exempt:0 "Exempted Jizya"
