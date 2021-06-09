@@ -103,6 +103,7 @@ siyasa_government = {
 	character_modifier = { 
 		levy_reinforcement_rate_different_faith = -0.35
 	}
-
+	
+	flag = government_can_raid_rule
 	color = { 250 225 100 }
 }
