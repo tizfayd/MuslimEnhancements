@@ -1,6 +1,6 @@
 ﻿clan_government = {
 	primary_holding = castle_holding
-	primary_cultures = { turkish karluk afghan baloch khwarezmian sogdian baranis butr bedouin maghrebi andalusian yemeni}
+	primary_cultures = { karluk afghan baloch khwarezmian sogdian baranis butr bedouin maghrebi andalusian yemeni}
 	preferred_religions = { islam_religion }
 
 	fallback = 2
@@ -77,7 +77,7 @@
 siyasa_government = {
 
 	primary_holding = castle_holding
-	primary_cultures = { persian tajik daylamite kurdish levantine egyptian }
+	primary_cultures = { turkish persian tajik daylamite kurdish levantine egyptian }
 	preferred_religions = { islam_religion }
 
 	fallback = 3
