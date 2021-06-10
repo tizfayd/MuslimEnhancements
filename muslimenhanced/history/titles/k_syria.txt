@@ -740,10 +740,7 @@ c_marash = {
 	1066.1.1 = {
 		liege = "d_edessa"
 	}
-	# Gave this county to Suleyman ibn Qutalmish so that he is playable. Not historically accurate. 
-	1066.1.1 = {
-		holder = 3046
-	}
+
 	1071.8.26 = {
 		liege = "d_antioch"
 	}
