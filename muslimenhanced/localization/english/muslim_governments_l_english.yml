@@ -5,7 +5,7 @@
  game_concept_iqta_desc:0 "Under the Iqta [government_form|E], a [liege|E] grants their [vassals|E] [land|E] to govern in exchange for [levies|E] and [taxes|E], regulated by individual [iqta_contracts|E] between Vassal and Liege."
  game_concept_iqta_contract:0 "Iqta Contract"
  game_concept_iqta_contracts:0 "Iqta Contracts"
- game_concept_iqta_contract_desc:1 "A $game_concept_iqta_contract$ specifies the [obligations|E] between a [iqta|E] [vassal|E] and their [liege|E]. It allows each Vassal to negotiate their Obligations individually. Moreover, Vassals of different [faith|E] don't need to provide a lot of [soldiers|E], but if they do, can be exempted from higher [taxes|E]\n\nSpecial contracts, such as #V $special_contract_iqta_grant_waqf_short$#!, #V $special_contract_iqta_free_market_short$#! and #V $special_contract_iqta_thughur_short$#! contracts, are available as well."
+ game_concept_iqta_contract_desc:1 "A $game_concept_iqta_contract$ specifies the [obligations|E] between a [iqta|E] [vassal|E] and their [liege|E]. It allows each Vassal to negotiate their Obligations individually. Moreover, Vassals of different [faith|E] don't need to provide a lot of [soldiers|E], but if they do, can be exempted from higher [taxes|E].\n\nSpecial contracts, such as #V $special_contract_iqta_grant_waqf_short$#!, #V $special_contract_iqta_free_market_short$#! and #V $special_contract_iqta_thughur_short$#! are available as well."
 
  siyasa_government:0 "Iqta"
  siyasa_government_adjective:0 "Iqta"
