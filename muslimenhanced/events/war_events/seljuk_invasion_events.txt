@@ -55,7 +55,15 @@ seljuk_invasion_events.0002 = {
 		character = title:e_persia.holder
 		animation = war_over_win
 	}
-	
+
+	lower_left_portrait = {
+		character = character:20474
+	}
+
+	lower_center_portrait = {
+		character = character:34220
+	}
+
 	option = {
 		name = seljuk_invasion_events.0002.a
 		
@@ -110,6 +118,82 @@ seljuk_invasion_events.0004 = {
 	
 	option = {
 		name = seljuk_invasion_events.0004.a
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#Alexios Komnenos
+seljuk_invasion_events.0005 = {
+	title = seljuk_invasion_events.0005.title
+	desc = 	seljuk_invasion_events.0005.desc
+	theme = war
+	
+	# Left portrait is Alexios, right portrait is Roussel
+	left_portrait = {
+		character = character:1742
+		animation = anger
+	}
+	
+	right_portrait = {
+		character = character:34220
+		animation = personality_dishonorable
+	}
+
+	immediate = {
+		custom_tooltip = seljuk_roussels_takeover
+	}
+
+	option = {
+		name = seljuk_invasion_events.0005.a
+		set_player_character = character:34220
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = seljuk_invasion_events.0005.b
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#Bulgarian Revolt
+seljuk_invasion_events.0006 = {
+	title = seljuk_invasion_events.0006.title
+	desc = 	seljuk_invasion_events.0006.desc
+	theme = crown
+	
+	# Left portrait is Duklja Holder, right portrait is the new Bulgarian King
+	left_portrait = {
+		character = title:d_duklja.holder
+		animation = personality_content
+	}
+	
+	right_portrait = {
+		character = character:20474
+		animation = happiness
+	}
+
+	immediate = {
+		custom_tooltip = seljuk_bulgarian_takeover
+	}
+
+	option = {
+		name = seljuk_invasion_events.0006.a
+		set_player_character = character:20474
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = seljuk_invasion_events.0006.b
 		
 		ai_chance = {
 			base = 100

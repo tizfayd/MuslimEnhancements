@@ -22,3 +22,8 @@ bulgarian_unrest_control = {
 	icon = county_modifier_control_positive
 	monthly_county_control_change_add = 12.0
 }
+
+byzantine_retreat = {
+	icon = county_modifier_control_negative
+	monthly_county_control_change_add = -12.0
+}

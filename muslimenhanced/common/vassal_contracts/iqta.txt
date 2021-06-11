@@ -193,7 +193,7 @@ fortifications_awasim = {
 		AND = {
 			scope:vassal = {
 				NOT = {
-					has_religion = every_neighboring_and_across_water_top_liege_realm_owner.religion
+					has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
 				}
 				has_religion = scope:liege.religion
 			}
@@ -212,7 +212,7 @@ fortifications_awasim = {
 				AND = {
 					scope:vassal = {
 						NOT = {
-							has_religion = every_neighboring_and_across_water_top_liege_realm_owner.religion
+							has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
 						}
 						has_religion = scope:liege.religion
 					}
@@ -244,7 +244,7 @@ fortifications_awasim = {
 					limit = {
 						scope:vassal = {
 							NOT = {
-								has_religion = every_neighboring_and_across_water_top_liege_realm_owner.religion
+								has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
 							}
 							has_religion = scope:liege.religion
 						}
