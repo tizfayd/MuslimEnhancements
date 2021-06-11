@@ -15,6 +15,11 @@
 
 	vassal_contract = {
 		clan_government_obligations
+		council_rights
+		war_declaration_rights
+		religious_rights
+		title_revocation_rights
+		succession_rights
 	}
 	
 	opinion_of_liege = {
@@ -94,10 +99,10 @@ siyasa_government = {
 		feudal_government_taxes
 		feudal_government_levies
 		special_contract_iqta
-		fortifications_awasim
+		succession_rights_iqta
+		exemption_jizya
 		religious_rights
 		title_revocation_rights
-		succession_rights
 	}
 
 	character_modifier = { 

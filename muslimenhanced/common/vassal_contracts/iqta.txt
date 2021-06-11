@@ -2,8 +2,178 @@ special_contract_iqta = {
 	display_mode = radiobutton
 	obligation_levels = {
 
-		special_contract_jizya = {
+		special_contract_iqta_normal = {
 			position = { 0 1 }
+			default = yes
+
+			ai_vassal_desire = 0	
+			ai_liege_desire = 0
+		}
+
+		special_contract_iqta_grant_waqf = {
+			parent = special_contract_iqta_normal
+			is_valid = {
+				scope:liege.culture = {
+					has_innovation = innovation_development_01
+				}
+				scope:vassal = {
+					has_faith = scope:liege.faith
+					primary_title.tier <= tier_duchy
+				}
+			}
+			position = { 1 1 }
+			
+			tax_factor = -0.75
+			levies_factor = -0.5
+
+			liege_modifier = {
+				clergy_opinion = 2
+				holy_order_hire_cost_mult = -0.02
+				monthly_piety = 1
+			}
+
+			vassal_modifier = {
+				levy_reinforcement_rate = -0.3
+				army_maintenance_mult = 0.1
+				church_holding_holding_build_gold_cost = -0.5
+				church_holding_build_gold_cost = -0.15
+				monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+				monthly_learning_lifestyle_xp_gain_mult = 0.05
+				clergy_opinion = 5
+			}
+			
+			ai_liege_desire =  {
+				value = 0
+				if = {
+					limit = {
+						scope:liege.scriptedtests_piety_income < -0.75
+					}
+					add = 4
+				}
+			}
+			ai_vassal_desire = {
+				value = 0
+				if = {
+					limit = {
+						scope:vassal = {
+							has_faith = scope:liege.faith
+							primary_title.tier <= tier_duchy
+						}
+						scope:liege.culture = {
+							has_innovation = innovation_development_01
+						}
+					}
+					add = 2
+				}
+			}
+		}
+
+		special_contract_iqta_thughur = {
+			is_valid = {
+				AND = {
+					scope:vassal = {
+						has_religion = scope:liege.religion
+					}
+					scope:liege.culture = {
+						has_innovation = innovation_burhs
+					}
+				}
+			}
+			parent = special_contract_iqta_normal
+			position = { 1 0 }
+			
+			liege_modifier = {
+				controlled_province_advantage = 1
+			}
+			
+			vassal_modifier = {
+				development_growth = -0.25
+				garrison_size = 0.35
+				controlled_province_advantage = 5
+				monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+				monthly_martial_lifestyle_xp_gain_mult = 0.1
+				castle_holding_build_gold_cost = -0.15
+				castle_holding_holding_build_gold_cost = -0.5
+				additional_fort_level = 1
+			}
+			
+			tax_factor = -0.5
+			levies_factor = -0.5
+
+			ai_liege_desire = 0
+			ai_vassal_desire = {
+				value = 2
+				if ={
+					limit = {
+						scope:vassal = {
+							NOT = {
+								has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
+							}
+							has_religion = scope:liege.religion
+						}
+					add = 3
+					}
+				}
+			}
+		}
+
+		special_contract_iqta_free_market = {
+			parent = special_contract_iqta_normal
+			is_valid = {
+				AND = {
+					scope:vassal = {
+						primary_title.tier <= tier_duchy
+					}
+					scope:liege.culture = {
+						has_innovation = innovation_currency_02
+					}
+				}
+			}
+			position = { 1 2 }
+			
+			tax_factor = -0.5
+			levies_factor = -0.75
+			liege_modifier = {
+				cultural_head_fascination_mult = 0.02
+			}
+			vassal_modifier = {
+				city_holding_holding_build_gold_cost = -0.5
+				city_holding_build_gold_cost = -0.15
+				character_capital_county_monthly_development_growth_add = 0.5
+				monthly_stewardship_lifestyle_xp_gain_mult = 0.15
+			}
+
+			ai_liege_desire = 2
+			ai_vassal_desire = {
+				value = 0
+				if = {
+					limit = {
+						AND = {
+							scope:vassal = {
+								primary_title.tier <= tier_duchy
+							}
+							scope:liege.culture = {
+								has_innovation = innovation_currency_02
+							}
+						}
+					}
+					add = 2
+				}
+			}
+		}
+	}
+}
+
+exemption_jizya = {
+	display_mode = checkbox
+	is_shown = {
+		NOT = {
+			scope:vassal = { has_religion = scope:liege.religion }
+		}
+	}
+	obligation_levels = {
+		exemption_jizya_normal = {
+			position = { 0 0 }
 			default = yes
 			tax_factor = {
 				if = {
@@ -28,9 +198,8 @@ special_contract_iqta = {
 			ai_vassal_desire = 0	
 			ai_liege_desire = 0
 		}
-
-		special_contract_exempt = {
-			parent = special_contract_jizya
+		exemption_jizya_exempt = {
+			parent = exemption_jizya_normal
 			is_valid = {
 				NOT = {
 					scope:vassal = {
@@ -38,7 +207,7 @@ special_contract_iqta = {
 					}
 				}
 			}
-			position = { 1 1 }
+			position = { 1 0 }
 			
 			tax_factor = 0
 			levies_factor = 0
@@ -56,202 +225,37 @@ special_contract_iqta = {
 			}
 			ai_liege_desire = 0
 		}
-
-		special_contract_march = {
-			is_valid = {
-				scope:liege.culture = {
-					has_innovation = innovation_burhs
-				}
-				scope:vassal = {
-					has_religion = scope:liege.religion
-				}
-			}
-			parent = special_contract_jizya
-			position = { 1 0 }
-			
-			tax_factor = -0.5
-			
-			vassal_modifier = {
-				levy_size = 0.35
-				army_maintenance_mult = -0.35
-				garrison_size = 0.35
-				levy_reinforcement_rate_same_faith = 0.35
-				controlled_province_advantage = 5
-			}
-			
-			flag = has_march_contract
-			
-			ai_liege_desire =  {
-				value = 1
-				if = {
-					limit = {
-						scope:liege.culture = {
-							has_innovation = innovation_burhs
-						}
-						scope:vassal.primary_title.tier >= tier_county
-					}
-					add = 2
-				}
-			}
-		}
-
-		special_contract_grant_waqf = {
-			parent = special_contract_jizya
-			is_valid = {
-				scope:vassal = {
-					has_faith = scope:liege.faith
-					primary_title.tier <= tier_duchy
-				}
-			}
-			position = { 1 0 }
-			
-			tax_factor = -0.75
-
-			liege_modifier = {
-				religious_vassal_opinion = 5
-				holy_order_hire_cost_mult = -0.05
-				monthly_piety = 2
-			}
-
-			vassal_modifier = {
-				levy_reinforcement_rate = -0.3
-				army_maintenance_mult = 0.1
-				church_holding_holding_build_gold_cost = -0.5
-				church_holding_build_gold_cost = -0.15
-			}
-			
-			ai_liege_desire =  {
-				value = 0
-				if = {
-					limit = {
-						scope:liege.scriptedtests_piety_income < -0.75
-					}
-					add = 4
-				}
-			}
-			ai_vassal_desire = {
-				value = 0
-				if = {
-					limit = {
-						scope:vassal = {
-							has_faith = scope:liege.faith
-							primary_title.tier <= tier_duchy
-						}
-					}
-					add = 2
-				}
-			}
-		}
-
-		special_contract_free_market = {
-			parent = special_contract_jizya
-			is_valid = {
-				AND = {
-					scope:vassal = {
-						primary_title.tier <= tier_duchy
-					}
-					scope:liege.culture = {
-						has_innovation = innovation_currency_02
-					}
-				}
-			}
-			position = { 1 2 }
-			
-			tax_factor = -0.5
-
-			vassal_modifier = {
-				city_holding_holding_build_gold_cost = -0.5
-				city_holding_build_gold_cost = -0.15
-				character_capital_county_monthly_development_growth_add = 0.5
-				stewardship = 2
-			}
-
-			ai_liege_desire = 2
-			ai_vassal_desire = {
-				value = 0
-				if = {
-					limit = {
-						AND = {
-							scope:vassal = {
-								primary_title.tier <= tier_duchy
-							}
-							scope:liege.culture = {
-								has_innovation = innovation_currency_02
-							}
-						}
-					}
-					add = 2
-				}
-			}
-		}
 	}
 }
 
-fortifications_awasim = {
-	display_mode = checkbox
-	is_shown = {
-		AND = {
-			scope:vassal = {
-				NOT = {
-					has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
-				}
-				has_religion = scope:liege.religion
-			}
-		}
-	}
+succession_rights_iqta = {
+	display_mode = radiobutton
 	obligation_levels = {
-		fortification_awasim_none = {
-			default = yes
-			position = { 0 0 }
-			
-			ai_liege_desire = 0
+
+		succession_rights_iqta_non_dynastic = {
+			parent = succession_rights_iqta_forced_partition
+			position = { 0 1 }
+			vassal_opinion = -50
+			ai_liege_desire = 5
 			ai_vassal_desire = 0
 		}
-		fortification_awasim_granted = {
-			is_valid = {
-				AND = {
-					scope:vassal = {
-						NOT = {
-							has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
-						}
-						has_religion = scope:liege.religion
-					}
-					scope:liege.culture = {
-						has_innovation = innovation_battlements
-					}
-				}
-			}
-			parent = fortification_awasim_none
+
+		succession_rights_iqta_forced_partition = {
+			default = yes
+			parent = succession_rights_default
+			position = { 1 1 }
+			
+			flag = locked_to_partition
+			
+			ai_liege_desire = 3
+			ai_vassal_desire = 3
+		}
+		succession_rights_iqta_normal = {
+			parent = succession_rights_iqta_forced_partition
 			position = { 1 0 }
-			
-			liege_modifier = {
-				castle_holding_build_gold_cost = 0.05
-			}
-			
-			vassal_modifier = {
-				martial = 2
-				castle_holding_build_gold_cost = -0.15
-				castle_holding_holding_build_gold_cost = -0.5
-				additional_fort_level = 1
-			}
-			
-			tax_factor = -0.2
-			
+			vassal_opinion = 25
 			ai_liege_desire = 0
-			ai_vassal_desire = {
-				value = 0
-				if ={
-					limit = {
-						scope:vassal = {
-							NOT = {
-								has_religion = root:every_neighboring_and_across_water_top_liege_realm_owner.religion
-							}
-							has_religion = scope:liege.religion
-						}
-					add = 10
-					}
-				}
-			}
+			ai_vassal_desire = 5
 		}
 	}
 }
