@@ -1,0 +1,11 @@
+﻿iqta = {
+	parent = government
+	alias = { siyasa_government iqta_government }
+}
+
+iqta_contract = {
+	alias = { iqta_contracts }
+	texture = "gfx/interface/icons/icon_contract_modification.dds"
+	framesize = { 60 60 }
+	frame = 1
+}
